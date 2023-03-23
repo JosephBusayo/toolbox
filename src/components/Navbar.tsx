@@ -22,10 +22,16 @@ export function Navbar( {isActive, toggleActive} : Props){
                 </button>
 
                 <div className="desktop-nav">
-                    <p> <Link to='/'>HOME</Link> </p>
-                    <p> <Link to='/category'>CATEGORIES</Link> </p>
-                    <p> <Link to='/support'>SUPPORT</Link> </p>
+                    <p> <Link className="link" to='/'>HOME</Link> </p>
+                    <p> <Link className="link" to='/category'>CATEGORIES</Link> </p>
+                    <p> <Link className="link" to='/support'>SUPPORT</Link> </p>
                 </div>
+            </div>
+
+            <div className='mobile-nav'>
+                <p> <Link className="link" to='/'>HOME</Link> </p>
+                <p> <Link className="link" to='/category'>CATEGORIES</Link> </p>
+                <p> <Link className="link" to='/support'>SUPPORT</Link> </p>
             </div>
         </section>
     )

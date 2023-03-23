@@ -7,6 +7,7 @@ import { Category } from './components/Category'
 import './styles/App.css'
 import './styles/Navbar.css'
 import './styles/Home.css'
+import './styles/Category.css'
 
 function App() {
   const [isActive, setIsActive] = useState(false)
@@ -24,6 +25,7 @@ function App() {
         <Route path="/category" element={<Category />} />
         <Route path="/support" element={<Home />} />
       </Routes>
+      <div className='bottom-elipse'> <img src="./elipse.png" alt="elipse" className="elipse"/></div>
       <div className='bottom-color'></div>
     </section>
     

@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +10,11 @@
     height: 100vh;
     overflow-y: hidden;
 }
+.link{
+    text-decoration: none;
+    color: black
 
+}
 .bottom-color{
     position: absolute;
     bottom: 0;
@@ -18,4 +23,9 @@
     height: 48px;
     background: #4D0099;
     border: 3px solid #000000;
+}
+.bottom-elipse{
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
