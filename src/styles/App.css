@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app{
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.bottom-color{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    background: #4D0099;
+    border: 3px solid #000000;
+}

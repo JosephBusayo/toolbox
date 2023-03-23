@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
+
+.desktop-nav{
+    display: none
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid ;
+    padding: 50px 12px 12px 12px;
+}
+.nav-title{
+    font-family: 'Crafty Girls', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+}
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-icon,
+.menu-icon::after,
+.menu-icon::before {
+    background-color: black;
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    position: absolute; /*position absolute is necessary*/
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+.menu-icon:first-child {
+    transform: translate(0px, -9px);
+}
+.menu-icon:last-child {
+    transform: translate(0px, 9px);
+}
+.menu-btn.active .menu-icon:nth-child(2) {
+    opacity: 0;
+}
+.menu-btn.active .menu-icon:first-child {
+    transform: translateY(2px) rotate(45deg);
+}
+.menu-btn.active .menu-icon:last-child {
+    transform: translateY(-2px) rotate(-45deg);
+}
+
+
+@media screen and (min-width: 1024px){
+    .nav{
+        border: none
+    }
+    .menu-btn{
+        display: none;
+    }
+    .desktop-nav{
+        display: flex;
+        gap: 20px
+    }
+}
