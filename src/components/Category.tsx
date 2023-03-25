@@ -10,10 +10,10 @@ export function Category(){
             </div>
 
             <div className="category-box-wrapper">
-                <div className="box ui-box">       <Link className="link" to=''>UI UX Design</Link> </div>
-                <div className="box web-box">      <Link className="link" to=''>Web Design</Link> </div>
-                <div className="box graphics-box"> <Link className="link" to=''>Graphics Design</Link> </div>
-                <div className="box software-box"> <Link className="link" to=''>Software Development</Link> </div>
+                <Link className="link" to='/uiux'> <div className="box ui-box">UI UX Design </div> </Link> 
+                <Link className="link" to='/software'> <div className="box web-box"> Web Design </div> </Link> 
+                <Link className="link" to='/graphics'> <div className="box graphics-box">  Graphics Design </div> </Link> 
+                <Link className="link" to='/software'> <div className="box software-box"> Software Development </div> </Link>
             </div>
         </section>
     )

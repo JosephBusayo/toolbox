@@ -1,0 +1,48 @@
+.resources{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.resources-title{
+    font-family: 'Fredoka';
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+}
+.resource-category-container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    align-items: center;
+    justify-content: center
+}
+.resource-category{
+    display: flex;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+
+@media screen and (min-width: 1024px){
+    .resources-title{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .resource-category-container{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 5px;
+        align-items: center;
+        justify-content: center
+    }
+    .resource-category{
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

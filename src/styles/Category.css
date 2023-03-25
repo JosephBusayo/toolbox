@@ -36,11 +36,12 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    border: 3px solid #000000;
     border-radius: 6px;
     text-align: center;
     align-items: center;
     padding: 16px 0;
+    transition: transform 0.7s ease, box-shadow 0.5s ease;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 .software-box{
     padding: 4px 0;
@@ -95,5 +96,9 @@
         font-size: 32px;
         line-height: 39px;
         padding: 35px 0;
+    }
+    .box:hover{
+        transform: scale(1.2);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     }
 }

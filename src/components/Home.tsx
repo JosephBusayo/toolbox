@@ -29,9 +29,17 @@ export function Home(){
                         <button className='home-btn'>GET STARTED</button>
                     </div>
 
-                    <div className='home-img-wrapper'>
+                    <div className='mobile-home-img-wrapper'>
                         <img 
-                            src="./uiux.png" 
+                            src="./mobileTextImg.png" 
+                            alt="design" 
+                            className="home-img"
+                        />
+                    </div>
+               
+                    <div className='desktop-home-img-wrapper'>
+                        <img 
+                            src="./desktopTextImg.png" 
                             alt="design" 
                             className="home-img"
                         />

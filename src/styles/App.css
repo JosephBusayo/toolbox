@@ -7,8 +7,15 @@
 .app{
     max-width: 1440px;
     margin: 0 auto;
-    height: 100vh;
+    background-image: url("./mobilebg.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 90%;
     overflow-y: hidden;
+
+}
+#root{
+    height: 100vh;
 }
 .link{
     text-decoration: none;
@@ -28,4 +35,11 @@
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+@media screen and (min-width: 1024px){
+    .app{
+        background-image: url("./desktopbg.png");
+        background-position: left bottom;
+    }
 }
