@@ -10,6 +10,12 @@
     justify-content: space-between;
     border-bottom: 2px solid ;
     padding: 50px 12px 12px 12px;
+    position: sticky;
+    top: 0;
+    scroll-margin: 20px;
+    scroll-snap-type: y mandatory;
+    z-index: 1;
+    background-color: #FFFFFF;
 }
 .nav-title{
     font-family: 'Crafty Girls', cursive;

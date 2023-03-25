@@ -38,21 +38,18 @@ function App() {
           title = 'UI UX Design'
           category = {UiCategory}
           links = {UiLinks}
-        />} />
+          />} />
         <Route path="/graphics" element={<Resources 
           title = 'Graphics Design'
           category = {GraphicsCategory}
           links = {GraphicsLinks}
-        />} />
+          />} />
         <Route path="/software" element={<Resources
           title = 'Software Development'
           category = {SoftwareCategory}
           links = {SoftwareLinks}
          />} />
       </Routes>
-
-      <div className='bottom-elipse'> <img src="./elipse.png" alt="elipse" className="elipse"/></div>
-      <div className='bottom-color'></div>
     </section>
     
   )

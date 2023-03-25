@@ -1,6 +1,3 @@
-import '../styles/Resources.css'
-
-
 interface Props{
     title: string,
     category : {

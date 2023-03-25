@@ -3,6 +3,10 @@
 .category{
     text-align: center;
     margin-top: 50px;
+    background-image: url("./mobilebg.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .category-text-header{
@@ -59,6 +63,12 @@
 
 
 @media screen and (min-width: 1024px){
+    .category{
+        background-image: url("./desktopbg.png");
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
     .category-text-header{
         font-size: 48px;
         line-height: 58px;
@@ -86,7 +96,7 @@
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1440px){
     .category-box-wrapper{
         row-gap: 35px;
         column-gap: 80px;
