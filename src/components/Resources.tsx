@@ -8,13 +8,12 @@ interface Props{
         image: string,
         desc: string
     }[],
-
+    setToFalse : () => void
 }
 
-
-export function Resources( {title, category, links} : Props ){
+export function Resources( {title, category, links, setToFalse} : Props ){
     return(
-        <section className="resources">
+        <section className="resources" onClick={() => setToFalse()} >
             <section className="upper">
                 <h1 className="resources-title"> {title} </h1>
 
@@ -32,7 +31,7 @@ export function Resources( {title, category, links} : Props ){
                 {links.map((link, index)=> (
                     <div className="link-container" key={index}>
                         <div className="link-icon-div">
-                            <img src={`./${link.image}`} alt="link-icon" className="link-icon"/>
+                            <img src={`assets/${link.image}`} alt="link-icon" className="link-icon"/>
                         </div>
 
                         <p className="link-desc">{link.desc}</p>

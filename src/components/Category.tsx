@@ -1,9 +1,12 @@
 import {Link} from 'react-router-dom'
+interface Props{
+    isActive: boolean,
+    setToFalse : () => void
+}
 
-
-export function Category(){
+export function Category( {isActive, setToFalse} : Props){
     return(
-        <section className="category">
+        <section className="category" onClick={() => setToFalse()} >
             <div className="category-text-wrapper">
                 <h1 className="category-text-header">Select A Category</h1>
                 <p className="category-text-p">Get links to free resources on<br/> your chosen category</p>

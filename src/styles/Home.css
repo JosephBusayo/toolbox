@@ -1,12 +1,13 @@
 .home{
-    height: 70%;
     display: flex;
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
-    background-image: url("./mobilebg.png");
+    background-image: url("/assets/mobilebg.png");
     background-repeat: no-repeat;
     background-position: left ;
+    margin-top: 40px;
+    overflow: hidden;
 }
 .home-content-wrapper{
     width: 100%;
@@ -60,7 +61,7 @@
 
 @media screen and (min-width: 375px){
     .home{
-        background-image: url("./desktopbg.png");
+        background-image: url("/assets/mobilebg.png");
         background-position: left ;
     }
     .home-top-text{
@@ -83,6 +84,7 @@
 
 @media screen and (min-width: 1024px){
     .home{
+        background-image: url("/assets/desktopbg.png");
         height: 100%;
         display: flex;
         align-items: center;

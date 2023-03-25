@@ -1,8 +1,13 @@
 import { Typewriter } from 'react-simple-typewriter'
+import {Link} from 'react-router-dom'
+interface Props{
+    isActive: boolean,
+    setToFalse : () => void
+}
 
-export function Home(){
+export function Home( {isActive, setToFalse} : Props){
     return (
-            <section className='home'>
+            <section className='home'  onClick={() => setToFalse()} >
                 <div className='home-content-wrapper'>
                     <div className=''>
                         <h1 className='home-top-text'>
@@ -26,12 +31,13 @@ export function Home(){
                             resources, articles, websites &<br/> 
                             more.
                         </p>
-                        <button className='home-btn'>GET STARTED</button>
+
+                        <button className='home-btn'> <Link className="link" to='/category'> GET STARTED </Link> </button>
                     </div>
 
                     <div className='mobile-home-img-wrapper'>
                         <img 
-                            src="./mobileTextImg.png" 
+                            src="/assets/mobileTextImg.png" 
                             alt="design" 
                             className="home-img"
                         />
@@ -39,7 +45,7 @@ export function Home(){
                
                     <div className='desktop-home-img-wrapper'>
                         <img 
-                            src="./desktopTextImg.png" 
+                            src="/assets/desktopTextImg.png" 
                             alt="design" 
                             className="home-img"
                         />

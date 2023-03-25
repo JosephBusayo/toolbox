@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 2px solid ;
-    padding: 50px 12px 12px 12px;
+    padding: 35px 12px 12px 12px;
     position: sticky;
     top: 0;
     scroll-margin: 20px;
@@ -65,7 +65,7 @@
 }
 
 .mobile-nav{
-    padding: 40px 5px 0px 5px;
+    padding: 40px 20px 0px 20px;
     position: fixed; /* stays on screen unless a button is clicked */
     display: flex;
     align-items: center;
@@ -74,7 +74,7 @@
     top: 0;
     bottom: 0;
     font-size: 1.5rem;
-
+    width: 60%;
     left: -200%;
 
     background: #FFFFFF;
@@ -85,6 +85,10 @@
     transition: 0.5s ease-in-out;
     margin-left: -12px;
 }
+.mobile-nav.active{
+    left: 0;
+}
+
 
 @media screen and (min-width: 1024px){
     .nav{

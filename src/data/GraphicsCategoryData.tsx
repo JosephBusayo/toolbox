@@ -32,6 +32,18 @@ export const GraphicsCategory =[
 export const GraphicsLinks = [
   {
     image : 'behance.png',
-    desc : 'blah blah'
-  }
+    desc : 'Get design inspirations and connect with other designers.'
+  },
+  {
+    image : 'behance.png',
+    desc : 'Get design inspirations and connect with other designers.'
+  },
+  {
+    image : 'behance.png',
+    desc : 'Get design inspirations and connect with other designers.'
+  },
+  {
+    image : 'behance.png',
+    desc : 'Get design inspirations and connect with other designers.'
+  },
 ]

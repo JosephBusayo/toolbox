@@ -21,33 +21,37 @@ function App() {
 
   function toggleActive(){
       setIsActive(isActive ? false : true)
-      console.log(isActive)
   }
-
+  function setToFalse(){
+    setIsActive(false)
+  }
 
   return (
     <section className='app'>
       <Navbar isActive={isActive} toggleActive={toggleActive}/>  
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/category" element={<Category />} />
-        <Route path="/support" element={<Home />} />
+        <Route path="/" element={<Home isActive={isActive} setToFalse={setToFalse}/>} />
+        <Route path="/category" element={<Category isActive={isActive} setToFalse={setToFalse}/>} />
+        <Route path="/support" element={<Home isActive={isActive} setToFalse={setToFalse}/>} />
 
         <Route path="/uiux" element={<Resources
           title = 'UI UX Design'
           category = {UiCategory}
           links = {UiLinks}
+          setToFalse={setToFalse}
           />} />
         <Route path="/graphics" element={<Resources 
           title = 'Graphics Design'
           category = {GraphicsCategory}
           links = {GraphicsLinks}
+          setToFalse={setToFalse}
           />} />
         <Route path="/software" element={<Resources
           title = 'Software Development'
           category = {SoftwareCategory}
           links = {SoftwareLinks}
+          setToFalse={setToFalse}
          />} />
       </Routes>
     </section>

@@ -14,7 +14,6 @@ export function Navbar( {isActive, toggleActive} : Props){
                 <button
                     className={`menu-btn ${isActive ? 'active': ''} `}
                     onClick={() => toggleActive()}
-                    style={{height: '20px'}}
                     >
                     <div className="menu-icon"></div>
                     <div className="menu-icon"></div>
@@ -28,10 +27,10 @@ export function Navbar( {isActive, toggleActive} : Props){
                 </div>
             </div>
 
-            <div className='mobile-nav'>
-                <p> <Link className="link" to='/'>HOME</Link> </p>
-                <p> <Link className="link" to='/category'>CATEGORIES</Link> </p>
-                <p> <Link className="link" to='/support'>SUPPORT</Link> </p>
+            <div className={`mobile-nav ${isActive ? 'active' : ''} `}>
+                <p> <Link className="link" to='/' onClick={() => toggleActive()} > HOME</Link> </p>
+                <p> <Link className="link" to='/category' onClick={() => toggleActive()}>CATEGORIES</Link> </p>
+                <p> <Link className="link" to='/support' onClick={() => toggleActive()}>SUPPORT</Link> </p>
             </div>
         </section>
     )

@@ -32,42 +32,36 @@ export const UiCategory =[
 export const UiLinks = [
   {
     image : 'behance.png',
-    desc : 'blah blah'
+    desc : 'Get design inspirations and connect with other designers.'
   },
   {
     image : 'behance.png',
-    desc : 'blah blah'
+    desc : 'Get design inspirations and connect with other designers.'
   },
   {
     image : 'behance.png',
-    desc : 'blah blah'
+    desc : 'Get design inspirations and connect with other designers.'
   },
   {
     image : 'behance.png',
-    desc : 'blah blah'
+    desc : 'Get design inspirations and connect with other designers.'
   },
   {
     image : 'behance.png',
-    desc : 'blah blah'
+    desc : 'Get design inspirations and connect with other designers.'
   },
   {
     image : 'behance.png',
-    desc : 'blah blah'
+    desc : 'Get design inspirations and connect with other designers.'
   },
   {
     image : 'behance.png',
-    desc : 'blah blah'
+    desc : 'Get design inspirations and connect with other designers.'
   },
   {
     image : 'behance.png',
-    desc : 'blah blah'
+    desc : 'Get design inspirations and connect with other designers.'
   },
-  {
-    image : 'behance.png',
-    desc : 'blah blah'
-  },
-  {
-    image : 'behance.png',
-    desc : 'blah blah'
-  },
+
+
 ]
