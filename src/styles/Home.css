@@ -7,7 +7,6 @@
     background-repeat: no-repeat;
     background-position: left ;
     margin-top: 40px;
-    overflow: hidden;
 }
 .home-content-wrapper{
     width: 100%;
@@ -85,9 +84,9 @@
 @media screen and (min-width: 1024px){
     .home{
         background-image: url("/assets/desktopbg.png");
-        height: 100%;
         display: flex;
         align-items: center;
+        height: 80%;
     }
     .home-content-wrapper{
         width: 100%;

@@ -65,16 +65,16 @@
 }
 
 .mobile-nav{
-    padding: 40px 20px 0px 20px;
+    padding: 0px 20px 40px 20px;
     position: fixed; /* stays on screen unless a button is clicked */
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap:30px;
     top: 0;
     bottom: 0;
     font-size: 1.5rem;
     width: 60%;
+    justify-content: space-evenly;
     left: -200%;
 
     background: #FFFFFF;

@@ -24,6 +24,7 @@ export const SoftwareCategory =[
 export const SoftwareLinks = [
   {
     image : 'behance.png',
-    desc : 'blah blah'
+    desc : 'Get high quality images in different category for free',
+    linl : 'https://unsplash.com/'
   }
 ]
