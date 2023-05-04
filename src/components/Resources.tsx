@@ -1,25 +1,36 @@
+import { useState } from 'react';
+
 interface Props{
     title: string,
-    category : {
+    categorybtn : {
         text: string,
         color: string
     }[],
-    links : {
+    resources : {
         image: string,
         desc: string
     }[],
     setToFalse : () => void
 }
 
-export function Resources( {title, category, links, setToFalse} : Props ){
+export function Resources( {title, categorybtn, resources, setToFalse} : Props ){
+    
+    const [toShow, setToShow] = useState('all')
+    const filteredResource = toShow === 'all' ? resources : resources.filter(resource => resource.category === toShow);
+
+    const change = (text : string) =>{
+        setToShow(text)
+        console.log(text)
+    }
+
     return(
         <section className="resources" onClick={() => setToFalse()} >
             <section className="upper">
                 <h1 className="resources-title"> {title} </h1>
 
                 <div className="resource-category-container">
-                    {category.map((item, index) => (
-                        <div style={{backgroundColor: item.color}} key={index} className="resource-category"> 
+                    {categorybtn.map((item, index) => (
+                        <div style={{backgroundColor: item.color}} key={index} className="resource-category" onClick={() => change(item.text)}> 
                             {item.text}
                         </div>
                     ))}
@@ -28,13 +39,13 @@ export function Resources( {title, category, links, setToFalse} : Props ){
 
 
             <section className="lower">
-                {links.map((link, index)=> (
+                {filteredResource.map((resource, index)=> (
                     <div className="link-container" key={index}>
                         <div className="link-icon-div">
-                            <img src={`assets/${link.image}`} alt="link-icon" className="link-icon"/>
+                            <img src={`assets/${resource.image}`} alt="resource-icon" className="resource-icon"/>
                         </div>
 
-                        <p className="link-desc">{link.desc}</p>
+                        <p className="resource-desc">{resource.desc}</p>
                     </div>
                 ))}
             </section>

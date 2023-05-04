@@ -1,8 +1,4 @@
-export const UiCategory =[ 
-  { 
-    text : 'All', 
-    color : '#FFFFFF'
-  },
+export const UiCategoryButtons =[ 
   { 
     text : 'Illustrations', 
     color : '#FFFBD9'
@@ -29,39 +25,49 @@ export const UiCategory =[
   }
 ]
 
-export const UiLinks = [
+export const UiResources = [
   {
     image : 'behance.png',
-    desc : 'Get design inspirations and connect with other designers.'
+    desc : 'Get design inspirations and connect with other designers.',
+    category : 'image'
   },
   {
     image : 'behance.png',
-    desc : 'Get design inspirations and connect with other designers.'
+    desc : 'Get design inspirations and connect with other designers.',
+    category : 'image'
   },
   {
     image : 'behance.png',
-    desc : 'Get design inspirations and connect with other designers.'
+    desc : 'Get design inspirations and connect with other designers.',
+    category : 'image'
   },
   {
     image : 'behance.png',
-    desc : 'Get design inspirations and connect with other designers.'
+    desc : 'Get design inspirations and connect with other designers.',
+    category : 'image'
   },
   {
     image : 'behance.png',
-    desc : 'Get design inspirations and connect with other designers.'
+    desc : 'Get design inspirations and connect with other designers.',
+    category : 'image'
   },
   {
     image : 'behance.png',
-    desc : 'Get design inspirations and connect with other designers.'
+    desc : 'Get design inspirations and connect with other designers.',
+    category : 'image'
   },
   {
     image : 'behance.png',
-    desc : 'Get design inspirations and connect with other designers.'
+    desc : 'Get design inspirations and connect with other designers.',
+    category : 'image'
   },
   {
     image : 'behance.png',
-    desc : 'Get design inspirations and connect with other designers.'
+    desc : 'Get design inspirations and connect with other designers.',
+    category : 'image'
   },
 
 
 ]
+
+

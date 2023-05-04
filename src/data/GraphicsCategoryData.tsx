@@ -1,15 +1,7 @@
-export const GraphicsCategory =[ 
-  { 
-    text : 'All', 
-    color : '#FFFFFF'
-  },
+export const GraphicsCategoryButtons =[ 
   { 
     text : 'Illustrations', 
     color : '#FFFBD9'
-  },
-  { 
-    text : 'All', 
-    color : '#FFEBFB'
   },
   { 
     text : 'Ui Kits',
@@ -29,21 +21,30 @@ export const GraphicsCategory =[
   }
 ]
 
-export const GraphicsLinks = [
+export const GraphicsResources = [
   {
     image : 'behance.png',
-    desc : 'Get design inspirations and connect with other designers.'
+    desc : 'Get design inspirations and connect with other designers.',
+    category : 'Images'
   },
   {
     image : 'behance.png',
-    desc : 'Get design inspirations and connect with other designers.'
+    desc : 'Get design inspirations and connect with other designers.',
+    category : 'Colour Palletes'
   },
   {
     image : 'behance.png',
-    desc : 'Get design inspirations and connect with other designers.'
+    desc : 'Get design inspirations and connect with other designers.',
+    category : 'Images'
   },
   {
     image : 'behance.png',
-    desc : 'Get design inspirations and connect with other designers.'
+    desc : 'Get design inspirations and connect with other designers.',
+    category : 'Colour Palletes'
+  },
+  {
+    image : 'behance.png',
+    desc : 'Get design inspirations and connect with other designers.',
+    category : 'Fonts'
   },
 ]

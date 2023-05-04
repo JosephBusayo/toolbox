@@ -5,9 +5,9 @@ import { Navbar } from './components/Navbar';
 import { Category } from './components/Category'
 import { Resources } from './components/Resources';
 
-import {GraphicsCategory, GraphicsLinks} from './data/GraphicsCategoryData';
-import {SoftwareCategory, SoftwareLinks} from './data/SoftwareCategoryData';
-import {UiCategory, UiLinks} from './data/UiCategoryData';
+import {GraphicsCategoryButtons, GraphicsResources} from './data/GraphicsCategoryData';
+import {SoftwareCategoryButtons, SoftwareResources} from './data/SoftwareCategoryData';
+import {UiCategoryButtons, UiResources} from './data/UiCategoryData';
 
 import './styles/App.css'
 import './styles/Navbar.css'
@@ -37,20 +37,20 @@ function App() {
 
         <Route path="/uiux" element={<Resources
           title = 'UI UX Design'
-          category = {UiCategory}
-          links = {UiLinks}
+          categorybtn = {UiCategoryButtons}
+          resources = {UiResources}
           setToFalse={setToFalse}
           />} />
         <Route path="/graphics" element={<Resources 
           title = 'Graphics Design'
-          category = {GraphicsCategory}
-          links = {GraphicsLinks}
+          categorybtn = {GraphicsCategoryButtons}
+          resources = {GraphicsResources}
           setToFalse={setToFalse}
           />} />
         <Route path="/software" element={<Resources
           title = 'Software Development'
-          category = {SoftwareCategory}
-          links = {SoftwareLinks}
+          categorybtn = {SoftwareCategoryButtons}
+          resources = {SoftwareResources}
           setToFalse={setToFalse}
          />} />
       </Routes>

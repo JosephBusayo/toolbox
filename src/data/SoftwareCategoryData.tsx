@@ -1,8 +1,4 @@
-export const SoftwareCategory =[ 
-  { 
-    text : 'All', 
-    color : '#FFFFFF'
-  },
+export const SoftwareCategoryButtons =[ 
   { 
     text : 'Design files', 
     color : '#FFFBD9'
@@ -21,10 +17,12 @@ export const SoftwareCategory =[
   }
 ]
 
-export const SoftwareLinks = [
+export const SoftwareResources = [
   {
     image : 'behance.png',
     desc : 'Get high quality images in different category for free',
-    linl : 'https://unsplash.com/'
+    link : 'https://unsplash.com/',
+    category : 'image'
+
   }
 ]
